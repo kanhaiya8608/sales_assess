@@ -1,9 +1,24 @@
 import { useState } from 'react';
 import Modal from 'react-modal';
 import PropTypes from 'prop-types';
-// Set the app element for react-modal accessibility
-Modal.setAppElement('#root'); // Ensure this matches your app root element
+Modal.setAppElement('#root'); 
 
+const modalLayout = {
+  content: {
+    top: '50%',
+    left: '50%',
+    right: 'auto',
+    bottom: 'auto',
+    marginRight: '-50%',
+    transform: 'translate(-50%, -50%)',
+    width: '80%',
+    maxWidth: '500px',
+    padding: '20px',
+    borderRadius: '8px',
+    backgroundColor: '#fff',
+    border: 'none',
+  },
+};
 const ImportJsonModal = ({ isOpen, onRequestClose, onImport }) => {
   const [json, setJson] = useState('');
 
@@ -14,8 +29,8 @@ const ImportJsonModal = ({ isOpen, onRequestClose, onImport }) => {
   };
 
   return (
-    <Modal isOpen={isOpen} onRequestClose={onRequestClose} contentLabel="Import JSON">
-      <h2>Import JSON</h2>
+    <Modal  style={modalLayout} isOpen={isOpen} onRequestClose={onRequestClose} contentLabel="Import JSON">
+      <h2 className='text-2xl font-bold py-3'>Import JSON</h2>
       <textarea
         value={json}
         onChange={(e) => setJson(e.target.value)}
