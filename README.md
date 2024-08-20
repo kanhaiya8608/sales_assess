@@ -90,11 +90,62 @@ Fields can be added dynamically using the "Add Field" dropdown menu in the UI. S
 - Date Field
 - File Field
 
+
+
 ### Preview and JSON Handling
 
 - **Preview Form**: Navigate to the preview page to see the form in action.
 - **Copy JSON**: Copy the form configuration to the clipboard.
 - **Import JSON**: Import a previously saved form configuration.
+
+### Sample JSON for Testing
+
+To test the application, you can use the following sample JSON:
+
+```json
+{
+  "title": "Customer Feedback Form",
+  "description": "Please provide your feedback on our service.",
+  "fields": [
+    {
+      "type": "text",
+      "label": "Full Name",
+      "id": 1
+    },
+    {
+      "type": "dropdown",
+      "label": "How did you hear about us?",
+      "options": ["Social Media", "Friend", "Search Engine", "Advertisement"],
+      "id": 3
+    },
+    {
+      "type": "radio",
+      "label": "Rating",
+      "options": ["Excellent", "Good", "Average", "Poor"],
+      "id": 4
+    },
+    {
+      "type": "textarea",
+      "label": "Additional Comments",
+      "id": 5
+    },
+    {
+      "type": "date",
+      "label": "Date of Feedback",
+      "id": 6
+    },
+    {
+      "type": "text",
+      "label": "Email ID",
+      "id": 1724115672065,
+      "options": []
+    }
+  ]
+}
+```
+
+You can use the "Import JSON" feature in the application to load this sample form structure and test the form builder functionality.
+
 
 ## Contributing
 
@@ -125,3 +176,8 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ---
 
 This `README.md` should provide clear guidance on the project setup, usage, and contribution process. You can modify specific sections such as the repository link, acknowledgments, or project structure to match your actual project.
+
+
+
+
+
