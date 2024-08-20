@@ -1,6 +1,3 @@
-Sure! Here’s a well-structured `README.md` file for your Dynamic Form Builder project:
-
----
 
 # OnlineSales.ai Assessment
 
