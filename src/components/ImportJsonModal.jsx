@@ -15,6 +15,7 @@ const modalLayout = {
     maxWidth: '500px',
     padding: '20px',
     borderRadius: '8px',
+    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
     backgroundColor: '#fff',
     border: 'none',
   },
